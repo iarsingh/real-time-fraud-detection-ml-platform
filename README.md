@@ -1,5 +1,12 @@
 # Real-Time Fraud Detection ML Platform
 
+## Overview
+
+An ML engineering exercise that scores a transaction on three streaming-shaped features: amount, device changes and merchant risk. `POST /score` returns `hold` when the score is at or above 0, and no card is ever charged. A pytest suite runs in GitHub Actions to check the scoring and the hold decision.
+
+- **Built with:** Python, pytest, GitHub Actions
+- **Scope:** Local laptop lab with no real stream or payment system; it does not call a hosted model or apply production changes.
+
 <!-- project-guide:start -->
 ## Project guide
 
